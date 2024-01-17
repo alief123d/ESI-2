@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="assets/img/esi-logo.png" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- iCheck -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="assets/plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    />
+    <!-- Daterange picker -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/daterangepicker/daterangepicker.css"
+    />
+    <!-- summernote -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/summernote/summernote-bs4.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Styling the scrollbar for Firefox */
+/* Requires Gecko 64+ */
+scrollbar-color: #888 #f1f1f1; /* thumb color, track color */
+
+/* Styling the scrollbar for Internet Explorer */
+/* Requires IE 10+ */
+-ms-overflow-style: none; /* hide scrollbar */
+
+element::-ms-scrollbar {
+  width: 10px;
+}
+
+element::-ms-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+element::-ms-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+element::-ms-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <div class="container">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <img
+          src="assets/img/esi-logo.png"
+          alt="logo"
+          class="brand-image img-circle elevation-3"
+          width="50"
+        />
+        <a class="navbar-brand font-weight-bold p-2" href="#">ESI Riau</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#event">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pemberitahuan">Announcement</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled btn btn-primary"
+                href="#"
+                style="color: white"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </div>
+    <!-- carousel -->
+    <section id="home">
+      <div
+        id="carouselExampleControls"
+        class="carousel carousel-dark slide mb-5 mt-5"
+        data-bs-ride="carousel"
+      >
+      <ol class="carousel-indicators mt">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item h-100 active">
+            <div class="vh-100 d-flex justify-content-center">
+              <img src="assets/img/back3.png" style="width: 100%; object-fit: cover;" alt="" />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="font-weight-bold">Lorem</h5>
+              <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ratione.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <div class="vh-100 d-flex justify-content-center">
+              <img src="assets/img/back2.jpg" alt="" style="width: 100%; object-fit: cover;"/>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="font-weight-bold">Lorem</h5>
+              <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ratione.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <div class="vh-100 d-flex justify-content-center">
+              <img src="assets/img/back2.jpg" alt="" style="width: 100%; object-fit: cover;"/>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="font-weight-bold">Lorem</h5>
+              <p class="fs-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ratione.</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+      <!-- carousel end -->
+
+      <!-- About esi start -->
+      <div
+        class="container d-flex align-items-center justify-content-center mb-2"
+      >
+        <div class="logo">
+          <img
+            src="assets/img/esi-logo.png"
+            alt="logo"
+            class="img-circle elevation-2 mb-2"
+            width="100"
+          />
+        </div>
+        <div class="title ml-2">
+          <h1 style="font-weight: 600">ESI Riau</h1>
+        </div>
+      </div>
+      <section class="container mb-1">
+        <div class="about container">
+          <p style="text-align: center;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eveniet delectus,<br> fugiat optio officiis reiciendis asperiores pariatur aliquid aperiam magnam?
+          </p>
+        </div>
+          <div class="container py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col col-md-9 col-lg-7 col-xl-5">
+                <div class="card shadow-lg" style="background-color: rgb(148 163 184); height: auto" class="mt-1 vh-100">
+                  <div class="card-body p-4">
+                    <div class="d-flex text-black">
+                      <div class="flex-shrink-0 px-3 rounded">
+                        <img src="assets/img/ketua.png" alt="Generic placeholder image" class="img-fluid" style="width: 180px; border-radius: 50%;">
+                      </div>
+                      <div class="flex-grow-1 ms-3 px-2">
+                        <div class="ml-3" style="color: white">
+                          <h5 class="mb-0 mt-4 font-weight-bold" style="font-size: 24px;">Name</h5>
+                          <span class="mt-2">Jabatan</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- about esi end -->
+
+    <!-- event start -->
+    <section
+      id="event"
+      style="background-color: red ; height: auto; border-radius: 12px;"
+      class="mt-1"
+    >
+    <div class="pt-lg-5 d-none d-md-block">
+        <div class="container mt-5">
+            <h3
+              class="pt-5 text-center"
+              style="color: white; font-weight: 600; font-size: 40px"
+            >
+              Event
+            </h3>
+          <div class="tampil-desk row">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-right mt-2">
+              <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a
+                class="btn btn-primary mb-3"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators2"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="assets/img/ex1.jpeg"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- di hp -->
+    <div class="pt-0 pb-5 d-md-none">
+      <div class="container my-5">
+          <h3
+            class="pt-5 text-center mb-5"
+            style="color: white; font-weight: 600; font-size: 30px"
+          >
+            Event
+          </h3>
+        <div class="row">
+          <div class="col-6">
+          </div>
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide" 
+              data-interval="1000"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="assets/img/ex1.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- event end -->
+    <!-- pemberitahuan -->
+    <section id="pemberitahuan" class="mt-5">
+    <div class="d-flex justify-content-center pt-5 mb-5">
+      <div class="container my-5">
+          <h3
+            class="mb-3 text-center"
+            style="font-weight: 600; font-size: 30px"
+          >
+            Pemberitahuan
+          </h3>
+        <div class="row mb-5">
+            </div>
+            <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="assets/img/ex1.jpeg"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="assets/img/ex1.jpeg"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="assets/img/ex1.jpeg"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </section>
+    <!-- pemberitahuan end -->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div>
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: red"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                ESI RIAU
+              </h6>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit maiores corrupti consequatur, fuga necessitatibus enim laudantium ut, fugit, fugiat ad veniam atque facere ipsam ratione non incidunt sit reprehenderit corporis.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">example</h6>
+              <p>
+                <a class="text-white">example</a>
+              </p>
+              <p>
+                <a class="text-white">example</a>
+              </p>
+              <p>
+                <a class="text-white">example</a>
+              </p>
+              <p>
+                <a class="text-white">example</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                link
+              </h6>
+              <p>
+                <a class="text-white">Account</a>
+              </p>
+              <p>
+                <a class="text-white">Become an Affiliate</a>
+              </p>
+              <p>
+                <a class="text-white">Bio</a>
+              </p>
+              <p>
+                <a class="text-white">Help</a>
+              </p>
+            </div>
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> EXAMPLE , EXAMPLE - EXAMPLE</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-3">
+  
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                © 2024 Copyright:
+                <a class="text-white" href="https://esiriau.org/"
+                   >ESI RIAU</a
+                  >
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-facebook-f"></i
+                ></a>
+  
+              <!-- Twitter -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-twitter"></i
+                ></a>
+  
+              <!-- Google -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-google"></i
+                ></a>
+  
+              <!-- Instagram -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-instagram"></i
+                ></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+  </body>
+</html>
